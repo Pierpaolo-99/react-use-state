@@ -1,10 +1,10 @@
-export default function Button({ name, ActiveButton, handleOpen, children }) {
+export default function Button({ name, handleOpen, className }) {
     return (
         <div>
 
             <button
                 type="button"
-                className="btn btn-primary"
+                className={`btn ${className}`}
                 onClick={handleOpen}
             >
                 {name}

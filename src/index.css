@@ -1,12 +1,21 @@
 @import url(bootstrap);
 
 header {
+  background-color: #f8f9fa;
   padding: 1rem;
 }
 
 .ButtonList {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: start;
+  margin: 2rem 0;
   gap: 2rem;
+}
+
+.card {
+
+  h2,
+  p {
+    padding: 1rem;
+  }
 }

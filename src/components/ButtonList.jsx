@@ -13,6 +13,7 @@ export default function ButtonList() {
                 {programmingLanguages.map(language => (
                     <Button key={language.id} name={language.name}
                         ActiveButton={ActiveButton === language.id}
+                        className={ActiveButton === language.id ? "btn-warning" : "btn-primary"}
                         handleOpen={() => setActiveButton(ActiveButton === language.id ? 0 : language.id)}
                     >
                     </Button>
